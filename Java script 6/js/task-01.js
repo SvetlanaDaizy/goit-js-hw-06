@@ -3,8 +3,8 @@ console.log('Number of categories:', animalLi.children.length);
 
 
 
-const categoriesEl = document.querySelectorAll('h2');
+const categoriesEl = document.querySelector('h2');
 console.log('Category:', categoriesEl.textContent);
 
-const ElementLi = animalLi.querySelectorAll('ul').children;
+const ElementLi = animalLi.querySelector('ul').children;
 console.log('Elements:', ElementLi.length);
