@@ -9,9 +9,17 @@ const ingredients = [
 
 
 const navItemEl = document.createElement('li');
-navItemEl.li = 'Potatoes';
-navItemEl.li = 'Mushrooms';
-navItemEl.li = 'Garlic';
-navItemEl.li = 'Tomatos';
-navItemEl.li = 'Herbs';
-navItemEl.li = 'Condiments';
+navItemEl.classList.add('item');
+navItemEl.textContent = 'Potatoes';
+// navItemEl.textContent = 'Mushrooms';
+// navItemEl.textContent = 'Garlic';
+// navItemEl.textContent = 'Tomatos';
+// navItemEl.textContent = 'Herbs';
+// navItemEl.textContent = 'Condiments';
+
+document.ul.appendChild(navItemEl);
+
+
+
+
+console.log(navItemEl);
