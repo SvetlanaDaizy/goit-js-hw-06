@@ -7,19 +7,17 @@ const ingredients = [
   'Condiments',
 ];
 
+const addIngredients = document.querySelector('ul#ingredients');
 
-const navItemEl = document.createElement('li');
-navItemEl.classList.add('item');
-navItemEl.textContent = 'Potatoes';
-// navItemEl.textContent = 'Mushrooms';
-// navItemEl.textContent = 'Garlic';
-// navItemEl.textContent = 'Tomatos';
-// navItemEl.textContent = 'Herbs';
-// navItemEl.textContent = 'Condiments';
+const elements = ingredients.map(option => {
+  const navItemEl = document.createElement('li');
+  navItemEl.classList.add('item');
+  navItemEl.textContent = option;
 
-document.ul.appendChild(navItemEl);
+  return navItemEl;
+});
 
-
+addIngredients.append(...elements);
 
 
-console.log(navItemEl);
+
