@@ -8,9 +8,6 @@ targetInput.addEventListener('input', onInputChange);
 function onInputChange(event) {
     console.log(event.currentTarget.value);
 
-    if (event.currentTarget.value = '') {
-        targetOutput.textContent = 'Anonymous';
-    } 
-     targetOutput.textContent = event.currentTarget.value;
-    
+        targetOutput.textContent = event.currentTarget.value.trim() || 'Anonymous';
+
 }
