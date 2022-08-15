@@ -39,14 +39,13 @@
 // }   
      
 const counterValue = document.querySelector("span#value");
-const countValue = 0;
+const plusButton = document.querySelector('[data-action="decrement"]');
+const minusButton = document.querySelector('[data-action="increment"]');
 
 function func() {
-    
-    const plusButton = document.querySelector('[data-action="decrement"]');
-    
-    const minusButton = document.querySelector('[data-action="increment"]');
-    
+
+    const countValue = 0;
+   
     if (document.onclick = plusButton) {
         
         countValue++;
@@ -55,7 +54,7 @@ function func() {
         
     } else if (document.onclick = minusButton) {
         
-        countVAlue--;
+        countValue--;
         
         console.log(countValue);
         
