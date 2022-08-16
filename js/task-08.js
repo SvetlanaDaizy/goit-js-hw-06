@@ -21,5 +21,5 @@ function onFormSubmit(event) {
     }
     console.log(forms);
 
-    document.getElementById('login-form').reset();
+    document.form.reset();
 }
