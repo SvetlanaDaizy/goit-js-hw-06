@@ -9,21 +9,21 @@ const minusButton = document.querySelector('[data-action="increment"]');
 plusButton.addEventListener('click', decrementNumber);
 minusButton.addEventListener('click', incrementNumber);
 
-
+ 
+   
 function decrementNumber() {
-
-    const countValue = 0;
-    
-    counterValue.textContent = countValue ++;
+  const countValue = 0;
+       countValue ++;
+   counterValue.textContent = countValue;
+     
 }    
+ 
 
 function incrementNumber() {
 
         const countValue = 0;
-        
-  
-counterValue.textContent = countValue --;
-
+    countValue --;
+counterValue.textContent = countValue;
    }
 
 
