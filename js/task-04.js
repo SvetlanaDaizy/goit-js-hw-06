@@ -6,22 +6,29 @@ const counterValue = document.querySelector("span#value");
 const plusButton = document.querySelector('[data-action="decrement"]');
 const minusButton = document.querySelector('[data-action="increment"]');
 
-function func() {
+plusButton.addEventListener('click', decrementNumber);
+minusButton.addEventListener('click', incrementNumber);
+
+
+function decrementNumber() {
 
     const countValue = 0;
-   
-    if (document.onclick = plusButton) {
-        
-        countValue += 1;
-        
-       
-    } else if (document.onclick = minusButton) {
-        
-        countValue -= 1;
-        
-    }
+    
+    counterValue.textContent = countValue ++;
+}    
 
-counterValue.textContent = countValue;
+function incrementNumber() {
 
-}
+        const countValue = 0;
+        
+  
+counterValue.textContent = countValue --;
+
+   }
+
+
+
+
+
+
 
