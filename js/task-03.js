@@ -13,17 +13,7 @@ const images = [
   },
 ];
 
-// const galleryContain = document.querySelector('ul.gallery');
-// const ImageLi = document.createElement('li');
 
-// const elements = images.map(option => {
-//   const ImageHref = document.createElement('img');
-//   ImageHref.classList.add('.image');
-
-// })
-
-
-// console.log(ImageHref)
 
 const makeTransactionImage = transaction => {
   const { url, alt } = transaction;

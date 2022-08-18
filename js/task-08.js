@@ -11,7 +11,6 @@ function onFormSubmit(event) {
     event.preventDefault();
 
 
-
     const formElements = event.currentTarget.elements;
     const email = formElements.email.value;
     const password = formElements.password.value;
@@ -19,7 +18,14 @@ function onFormSubmit(event) {
         email,
         password,
     }
+
     console.log(forms);
 
-   form.reset();
+    if (forms.email !== '' && forms.password !== '') {
+        form.reset();
+    } else {
+        alert('Заполните все поля');
+    }
+
+   
 }
