@@ -9,10 +9,10 @@ const minusButton = document.querySelector('[data-action="increment"]');
 plusButton.addEventListener('click', decrementNumber);
 minusButton.addEventListener('click', incrementNumber);
 
- 
+   const countValue = 0;
    
 function decrementNumber() {
-  const countValue = 0;
+
        countValue ++;
    counterValue.textContent = countValue;
      
@@ -21,7 +21,6 @@ function decrementNumber() {
 
 function incrementNumber() {
 
-        const countValue = 0;
     countValue --;
 counterValue.textContent = countValue;
    }
